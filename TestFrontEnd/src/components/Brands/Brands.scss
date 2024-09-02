@@ -1,0 +1,32 @@
+.slider {
+    width: 1250px;
+    height: 300px;
+    position: absolute;
+    left: 8%;
+    top: 391%;
+    overflow: hidden;
+  }
+  
+  .inner {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    height: 100%;
+    width: 150%;
+    transition: 0s ease-in;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .inner-item {
+    min-width: 211px;
+    height: 211px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    box-shadow: 0px 7px 20px rgba(0, 0, 0, 0.13);
+    margin-right: 40px;
+  }
+  

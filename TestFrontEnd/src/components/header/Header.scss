@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+header{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.startHeader{
+    width: 761px;
+    height: 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+    font-size: 12px;
+    color: #9f9f9f;
+    .contentStart{
+        height: 100%;
+        display: flex;
+        align-items: center;
+        img{
+            margin-right: 8px;
+        }
+        .decoy{
+            font-weight: 600;
+            color: #f71963;
+        }
+    }
+}
+
+.mainHeader{
+    border: solid 1px #F0F0F0;
+    border-left: 0px;
+    border-right: 0px;
+    width: 1280px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 72px;
+    .inputArea{
+        height: 100%;
+        display: flex;
+        align-items: center;
+
+    }
+    input{
+        width: 593px;
+        height: 48px;
+        border-radius: 10px 0px 0px 10px;
+        background-color: #f6f5f2;
+        border: none;
+        font-family: "Poppins", sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+        padding-left: 15px;
+    }
+    input::placeholder{
+        color: #9f9f9f;
+    }
+    button{
+        height: 48px;
+        width: 60px;
+        border: none;
+        background-color: #f6f5f2;
+        border-radius: 0px 10px 10px 0px;
+        cursor: pointer;
+    }
+    .iconsArea{
+        width: 216px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        #sender{
+            width: 24px;
+            height: 24px;
+        }
+    }
+}
+
+.headerCategory{
+    width: 1280px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0px 8px 16px rgba(57, 48, 19, 0.12);
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    color: #9f9f9f;
+    text-transform: uppercase;
+    span{
+        cursor: pointer;
+    }
+}

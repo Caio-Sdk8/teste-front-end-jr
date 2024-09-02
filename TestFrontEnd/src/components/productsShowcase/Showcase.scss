@@ -11,13 +11,13 @@
         height: 34px;
         border: none;
         position: absolute;
-        top: calc(50% - 4px);
+        top: calc(180%);
     }
     .carouselButtons:first-of-type{
-        left: -10px;
+        right: 96%;
     }
     .carouselButtons:last-of-type{
-        right: -10px;
+        left: 103%;
     }
     button{
         cursor: pointer;
