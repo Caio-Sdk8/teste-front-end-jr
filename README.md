@@ -1,5 +1,40 @@
 # Teste Econverse: Vaga Desenvolvedor Front-End Jr
 
+## Instalação 
+
+1. **Pre-requisitos**
+    - Certifique-se de ter o NodeJS instalado na sua máquina.
+    - Baixe aqui: https://nodejs.org/pt
+    
+2. **Clone ou Repositório**
+
+    ```bash
+    git clone https://github.com/Caio-Sdk8/teste-front-end-jr.git
+    ```
+    
+3. **Entre na pasta correta**
+
+    ```bash
+    cd TestFrontEnd
+    ```
+    
+4. **Instalar dependências**
+
+    ```bash
+    npm i
+    ```
+
+5. **Inicie o Programa**
+
+    ```bash
+    npm run dev
+    ```
+5. **Entre na Url fornecida**
+
+    ```bash
+    caso não encontre, normalmente é utilizada: http://localhost:5173/
+    ```
+
 ### Vem ser #Econverse!
 
 Segue abaixo as instruções para a execução do teste.
