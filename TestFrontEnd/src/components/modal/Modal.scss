@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+.modal {
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.54);
+    
+        &.display-block {
+            display: block;
+        }
+    
+        &.display-none {
+            display: none;
+        }
+    }
+    
+.modal-main {
+    position: fixed;
+    background: white;
+    width: 769px;
+    height: 299.26px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-family: "Lato", sans-serif;
+    .exitIcon{
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        cursor: pointer;
+    }
+    
+}
+.modalClass{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 661px;
+        .modalContent{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            height: 238px;
+        }
+        #modalProduct{
+            font-size: 20px;
+            color: #041E50;
+        }
+        #modalPrice{
+            font-size: 20px;
+            color: #041E50;
+            font-weight: 900;
+        }
+        #modalDescription{
+            font-size: 10px;
+            color: #222222;
+        }
+        #modalDetails{
+            color: #041E50;
+            font-size: 12px;
+            cursor: pointer;
+        }
+        button{
+            width: 245px;
+            height: 44px;
+            background-color: #F71963;
+            color: #fff;
+            font-size: 14px;
+            font-weight: 700;
+            text-transform: uppercase;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .amountCounter{
+            display: flex;
+            button{
+                width: 38px;
+                height: 36px;
+                color: #041E50;
+                background-color: #fff;
+                border-style: solid;
+                border-color: #041E50; 
+            }
+            .minus{
+                border-radius: 4px 0px 0px 4px;
+                border-width: 1px 0px 1px 1px;
+            }
+            .plus{
+                border-radius: 0px 4px 4px 0px;
+                border-width: 1px 1px 1px 0px;
+            }
+            input{
+                width: 34px;
+                height: 36px;
+                text-align: center;
+                font-family: "Montserrat", sans-serif;
+                font-weight: 500;
+                font-size: 16px;
+                border-style: solid;
+                border-width: 1px 0px;
+                border-color: #041E50;
+            }
+        }
+}

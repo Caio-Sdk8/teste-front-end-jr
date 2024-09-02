@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.containerCarousel{
+    display: flex;
+    justify-content: center;
+    width: 1389px;
+    overflow: hidden;
+    .carouselButtons{
+        background: none;
+        width: 20px;
+        height: 34px;
+        border: none;
+        position: absolute;
+        top: calc(50% - 4px);
+    }
+    .carouselButtons:first-of-type{
+        left: -10px;
+    }
+    .carouselButtons:last-of-type{
+        right: -10px;
+    }
+    button{
+        cursor: pointer;
+    }
+}
+.cardsCarousel{
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 1294px;
+    padding: 0px 14px;
+    height: 530px;
+    margin-top: 11px;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    min-width: 270px;
+    margin-right: 62px;
+    height: 500px;
+    border-radius: 10px;
+    box-shadow: 0px 3px 19px rgba(0, 0, 0, 0.22);
+    font-family: "Poppins", sans-serif;
+    div{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 245px;
+    }
+    img{
+        width: 247px;
+        height: 228px;
+    }
+    #description{
+        font-weight: 300;
+        font-size: 15px;
+        color: #3F3F40;
+        width: 245px;
+    }
+    #discount{
+        color: #808080;
+        text-decoration: line-through;
+    }
+    #price{
+        font-weight: 700;
+        font-size: 20px;
+        color: #3F3F40;
+    }
+    #paymentOptions{
+        font-size: 12px;
+        color: #3F3F40;
+    }
+    #shipping{
+        font-size: 12px;
+        color: #F71963;
+    }
+    button{
+        width: 245px;
+        height: 44px;
+        background-color: #F71963;
+        color: #fff;
+        font-size: 14px;
+        font-weight: 700;
+        text-transform: uppercase;
+        border: none;
+        border-radius: 4px;
+    }
+}
+
+.card:last-child{
+    margin: 0px;
+}
+

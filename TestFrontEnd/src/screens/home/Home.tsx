@@ -1,26 +1,18 @@
-import { useEffect, useState } from "react";
 import axios from "axios";
 import './Home.scss';
+import RightButton from "../../assets/icons/rightButton.png"
+import LeftButton from "../../assets/icons/leftButton.png"
+import Showcase from "../../components/productsShowcase/Showcase"
+import Article from "../../components/articles/Article"
+import ArticlesProducts from "../../components/secondArticles/ArticlesProducts"
+import Hr from "../../assets/icons/Line 27.png"
 
 export default function Home() {
     const selectType = document.querySelectorAll('.selectorsProducts')
-    var container = document.getElementById('container')
-    var slider = document.getElementById('cardsCarousel');
-    var slides = document.getElementsByClassName('card').length;
-    var buttons = document.getElementsByClassName('btn')
-    
-    
-    var currentPosition = 0;
-    var currentMargin = 0;
-    var slidesPerPage = 0;
-    var slidesCount = slides - slidesPerPage;
-    if(container){
-        var containerWidth = container.offsetWidth;
-    }
+    const box = document.querySelector('.cardsCarousel');
 
     selectType.forEach(selectorType => {
         selectorType.addEventListener('click', () => {
-            console.log(selectorType)
             document.querySelector('.selected')?.classList.remove('selected')
             selectorType.classList.add('selected')
         })
@@ -29,10 +21,21 @@ export default function Home() {
     return (
         <div>
             <span>Hoi</span>
-
-            <section className="sectionProducts">
+            <section>
                 <div>
-                    <h2>Produtos</h2>
+                    <div>
+                        <div>
+                            <img src="" alt=""/>
+                        </div>
+                        <span></span>
+                    </div>
+                </div>
+            </section>
+            <section className="sectionProducts">
+                <div className="sectionTitle">
+                    <img src={Hr} alt=""/>
+                    <h2>Produtos relacionados</h2>
+                    <img src={Hr} alt=""/>
                 </div>
                 <nav className="navProducts">
                     <ul>
@@ -44,44 +47,19 @@ export default function Home() {
                         <li className="selectorsProducts">Ver todos</li>
                     </ul>
                 </nav>
-                <div className="cardsCarousel">
-                    <div className="card">
-                        <img src="https://app.econverse.com.br/teste-front-end/junior/tecnologia/fotos-produtos/foto-iphone.png" alt="" />
-                        <span id="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
-                        <span id="discount">R$ 30,90</span>
-                        <span id="price">R$ 28,90</span>
-                        <span id="paymentOptions">ou 2x de R$ 49,95 sem juros</span>
-                        <span id="shipping">Frete grátis</span>
-                        <button>Comprar</button>
+                <Showcase adress="http://app.econverse.com.br/teste-front-end/junior/tecnologia/lista-produtos/produtos.json"/>
+            </section>
+            <section className="articlesSec">
+                <Article title= "Parceiros"></Article>
+                <div className="secondSection">
+                    <div className="sectionTitle">
+                        <img src={Hr} alt=""/>
+                        <h2>Produtos relacionados</h2>
+                        <img src={Hr} alt=""/>
                     </div>
-                    <div className="card">
-                        <img src="https://app.econverse.com.br/teste-front-end/junior/tecnologia/fotos-produtos/foto-iphone.png" alt="" />
-                        <span id="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
-                        <span id="discount">R$ 30,90</span>
-                        <span id="price">R$ 28,90</span>
-                        <span id="paymentOptions">ou 2x de R$ 49,95 sem juros</span>
-                        <span id="shipping">Frete grátis</span>
-                        <button>Comprar</button>
-                    </div>
-                    <div className="card">
-                        <img src="https://app.econverse.com.br/teste-front-end/junior/tecnologia/fotos-produtos/foto-iphone.png" alt="" />
-                        <span id="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
-                        <span id="discount">R$ 30,90</span>
-                        <span id="price">R$ 28,90</span>
-                        <span id="paymentOptions">ou 2x de R$ 49,95 sem juros</span>
-                        <span id="shipping">Frete grátis</span>
-                        <button>Comprar</button>
-                    </div>
-                    <div className="card">
-                        <img src="https://app.econverse.com.br/teste-front-end/junior/tecnologia/fotos-produtos/foto-iphone.png" alt="" />
-                        <span id="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
-                        <span id="discount">R$ 30,90</span>
-                        <span id="price">R$ 28,90</span>
-                        <span id="paymentOptions">ou 2x de R$ 49,95 sem juros</span>
-                        <span id="shipping">Frete grátis</span>
-                        <button>Comprar</button>
-                    </div>
+                    <span>Ver todos</span>
                 </div>
+                <ArticlesProducts title= "Produtos"></ArticlesProducts>
             </section>
         </div>
     )
